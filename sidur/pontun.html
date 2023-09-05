@@ -1,12 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="is">
-  
   <head>
     <meta charset="utf-8">
     <meta name="viewport"
     content="width=device-width, initial-scale=1.0">
     <title>Pontun</title>
   </head>
+
   <body>
     <h1>Pantarnir</h1>
     <p>Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða þú sækir.</p>
@@ -14,25 +14,29 @@
      <form action="/skraning" method="post">
       <fieldset>
         <legend><strong>Panta Borð</strong></legend>
-        <label>
-            <div>
-            Hvenær viltu koma?
-            <select id="time" name="time">
-                <option value="5:00pm">17:00</option>
-                <option value="5:30pm">17:30</option>
-                <option value="6.00pm">18:00</option>
-                <option value="6.30pm">18:30</option>
-                <option value="7.00pm">19:00</option>
-                <option value="7.30pm">19:30</option>
-                <option value="8.00pm">20:00</option>
-                <option value="8.30pm">20:30</option>
-                <option value="9.00pm">21:00</option>
-            </div>
-        </label>
         
-        <label>
-          <div>
-          <select type="number">Hve mörg?
+        <label> Klukkan Hvað? </label>
+            
+          <select id="time" name="time">
+              <option value="5:00pm">17:00</option>
+              <option value="5:30pm">17:30</option>
+              <option value="6.00pm">18:00</option>
+              <option value="6.30pm">18:30</option>
+              <option value="7.00pm">19:00</option>
+              <option value="7.30pm">19:30</option>
+              <option value="8.00pm">20:00</option>
+              <option value="8.30pm">20:30</option>
+              <option value="9.00pm">21:00</option>
+            </select>
+        
+
+    
+        
+        
+          
+          
+          <label>Hve mörg?</label>
+            
             <select id="number" name="number">
               <option value="1">1</option>
               <option value="2">2</option>
@@ -46,8 +50,8 @@
               <option value="10">10</option>
 
             </select>
-          </div>
-        </label>
+          
+        
         <div>
           <label for="comment">Viltu taka eitthvað fram?</label>
           <textarea name="comment" id="comment"></textarea>
@@ -56,7 +60,8 @@
       <fieldset>
         <legend><strong>Panta mat</strong></legend>
         <div>
-            <label for="matur">Rettur 1</label>
+            
+              <label>Rettur 1</label>
             <select id="matur1" name="matur1">
                 <option value="Lasagna">Lasagna</option>
                 <option value="Sveppa risotto">Sveppa risotto</option>
@@ -70,7 +75,7 @@
             </select>
           </div>
          <div>
-          <label for="matur">Rettur 2</label>
+          <label>Rettur 2</label>
           <select id="matur2" name="matur2">
             <option value="Lasagna">Lasagna</option>
             <option value="Sveppa risotto">Sveppa risotto</option>
@@ -84,7 +89,7 @@
           </select>
         </div>
         <div>
-            <label for="matur">Rettur 3</label>
+            <label> Rettur 3 </label>
             <select id="matur3" name="matur3">
               <option value="Lasagna">Lasagna</option>
               <option value="Sveppa risotto">Sveppa risotto</option>
@@ -98,7 +103,7 @@
             </select>
           </div>
           <div>
-            <label for="matur">Rettur 4</label>
+            <label> Rettur 4 </label>
             <select id="matur4" name="matur4">
                 <option value="Lasagna">Lasagna</option>
                 <option value="Sveppa risotto">Sveppa risotto</option>
@@ -112,7 +117,7 @@
             </select>
           </div>
           <div>
-            <label for="matur">Rettur 5</label>
+            <label> Rettur 5 </label>
             <select id="matur5" name="matur5">
                 <option value="Lasagna">Lasagna</option>
                 <option value="Sveppa risotto">Sveppa risotto</option>
@@ -127,7 +132,7 @@
           </div>
         <div>
           <label>
-            <input type="text" id="Adress">
+            <input type="text" id="Adress" name="adress">
             Heimilisfáng
           </label>
         </div>
@@ -152,7 +157,6 @@
                 <input type="text" id="phone"  placeholder="000-0000" required>
               </label>
         </div>
-        <button type="reset">Byrja upp á nýtt</button>
         <button>Senda</button>
 </fieldset>
 <fieldset>
@@ -167,6 +171,8 @@
     <button>Senda</button>
 
   </fieldset>
+
+  <p><a href="../index.html">Aftur á forsíðu</a></p>
 
   <P><strong>Opnunartími</strong></P>
   <p>Mánudaga til fimmtudaga 09:00–18:00 Föstudaga 10:00–22:00 Laugardaga 11:00–22:00 Sunnudaga Lokað</p>
